@@ -106,7 +106,7 @@
 					updateOnSplit = options.updateOn.split(" ");
 
 				if (tagType === "inputtext" || tagType === "textarea") {
-					defaultEvents = ["keydown", "input", "change"];
+					defaultEvents = ["keydown", "input", "change", "compositionstart", "compositionend"];
 				} else if (tagType === "inputradio" || tagType === "inputcheckbox") {
 					defaultEvents = ["click"];
 				} else if (tagType === "select") {
